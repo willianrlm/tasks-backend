@@ -21,6 +21,7 @@ pipeline {
                 }
             }
         }
+        /*
         stage ('Quality Gate') {
             steps {
                 sleep(5)
@@ -68,7 +69,7 @@ pipeline {
         }
         fixed {
             emailext attachLog: true, body: 'See the attached log below', subject: 'Build is fine!!!', to: 'wcaquino+jenkins@gmail.com'
-        }
+        }/*
     }
 }
 
